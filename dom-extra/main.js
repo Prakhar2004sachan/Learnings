@@ -15,7 +15,7 @@ function createChild(title, description, id) {
   firstGrandParent.innerHTML = title;
   const secondGrandParent = document.createElement("div");
   secondGrandParent.innerHTML = description;
-  const thirdGrandParent = document.createElement("div");
+  const thirdGrandParent = document.createElement("button");
   thirdGrandParent.innerHTML = "mark as done";
   thirdGrandParent.setAttribute("onclick", `markAsDone${id}`);
   child.appendChild(firstGrandParent);
